@@ -11,7 +11,7 @@ typedef struct student
 
 void printList(Student *p)
 {
-    while(p->next != NULL) //If a node is found which has a next value of NULL (not pointing to anyting) the loop will stop
+    while(p->next != NULL) //If a node is found which has a next value of NULL (not pointing to anything) the loop will stop
     {
         p = p->next; //Getting the next node
         printf("%d, %f, %s\n", p->roll, p->cgpa, p->name);
