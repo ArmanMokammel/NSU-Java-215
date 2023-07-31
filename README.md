@@ -1,2 +1,2 @@
 # NSU-Java-215
-Setup in progress
+Here you will find the codes for all our NSU lab tasks.
