@@ -1,29 +1,15 @@
-public class Student {
-	private int id;
-	private float cgpa;
-	
-	public void setId(int id)
-	{
-		this.id = id;
+import java.util.Scanner;;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student s = new Student () ;
+		s.setId(123); ;
+		s.setCGPA(2.8f); 
+		System.out.println(s.getId() + ", " +  s.getCGPA());
+		s.printRemarks();
 	}
-	
-	public int getId()
-	{
-		return this.id;
-	}
-	
-	public void setCGPA(float cgpa)
-	{
-		this.cgpa = cgpa;
-	}
-	
-	public float getCGPA()
-	{
-		return this.cgpa;
-	}
-	
-	public void printRemarks()
-	{
-		System.out.print(id + " " + cgpa);
-	}
+
 }
