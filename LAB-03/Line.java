@@ -38,6 +38,6 @@ public class Line {
 	
 	public double length()
 	{
-		return Math.sqrt(Math.pow((end.getX() - start.getX()), 2) + Math.pow((end.getY() - start.getY()), 2));
+		return Math.sqrt(Math.pow(end.getX() - start.getX(), 2) + Math.pow(end.getY() - start.getY(), 2));
 	}
 }
