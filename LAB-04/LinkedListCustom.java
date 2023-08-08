@@ -71,17 +71,17 @@ public class LinkedListCustom{
 	 }
 	 
 	 public String toString() {
-		 String str = "[";
-        Node current = head;    
+		String str = "[";
+         	Node current = head;    
             
-        if(head == null) {    
-            return "List is empty";    
-        }    
-        while(current != null) {    
-            str = str + current.data + ", ";    
-            current = current.next;    
-        } 
-        str = str + "]";
-        return str;
+        	if(head == null) {    
+            		return "List is empty";    
+        	}    
+        	while(current != null) {    
+            		str = str + current.data + ", ";    
+            		current = current.next;    
+        	} 
+        	str = str + "]";
+        	return str;
     }
 }
