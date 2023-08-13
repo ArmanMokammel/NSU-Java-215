@@ -1,4 +1,3 @@
-
 public class MyString {
 	char[] str ;
 	
@@ -27,9 +26,18 @@ public class MyString {
 		return this.str[i];
 	}
 	
-	public indexOf()
+	public int indexOf(char c)
 	{
-		
+		int index = 0;
+		for(char s: str)
+		{
+			if(s == c)
+			{
+				return index;
+			}
+			index++;				
+		}
+		return 0;
 	}
 	
 	public boolean contains(String s)
@@ -88,6 +96,26 @@ public class MyString {
 				str[i] = newchar;
 			}
 		}
+	}
+	
+	public String toUpperCase()
+	{
+		for(int i = 0; i < this.length(); i++)
+		{
+			if(str[i] <= 'z' && str[i] >= 'a')
+				str[i] = (char)(str[i] - 32);
+		}
+		return new String(this.str);
+	}
+	
+	public String toLowerCase()
+	{
+		for(int i = 0; i < this.length(); i++)
+		{
+			if(str[i] <= 'Z' && str[i] >= 'A')
+				str[i] = (char)(str[i] + 32);
+		}
+		return new String(this.str);
 	}
 		
 	public void printString ()
