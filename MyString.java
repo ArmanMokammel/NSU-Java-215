@@ -21,6 +21,19 @@ public class MyString {
 		return len;
 	}
 	
+	public String trim()
+	{
+		String s = new String();
+		for(char c: str)
+		{
+			if(c != ' ')
+			{
+				s += c;
+			}
+		}
+		return s;
+	}
+	
 	public char charAt(int i)
 	{
 		return this.str[i];
@@ -100,22 +113,28 @@ public class MyString {
 	
 	public String toUpperCase()
 	{
+		char[] string = new char[this.length()];
 		for(int i = 0; i < this.length(); i++)
 		{
 			if(str[i] <= 'z' && str[i] >= 'a')
-				str[i] = (char)(str[i] - 32);
+				string[i] = (char)(str[i] - 32);
+			else
+				string[i] = str[i];
 		}
-		return new String(this.str);
+		return new String(string);
 	}
 	
 	public String toLowerCase()
 	{
+		char[] string = new char[this.length()];
 		for(int i = 0; i < this.length(); i++)
 		{
 			if(str[i] <= 'Z' && str[i] >= 'A')
-				str[i] = (char)(str[i] + 32);
+				string[i] = (char)(str[i] + 32);
+			else
+				string[i] = str[i];
 		}
-		return new String(this.str);
+		return new String(string);
 	}
 		
 	public void printString ()
