@@ -50,12 +50,12 @@ public class MyString {
 		return this.str[i];
 	}
 	
-	public int indexOf(char c)
+	public int indexOf(char ch)
 	{
 		int index = 0;
 		for(char s: str)
 		{
-			if(s == c)
+			if(s == ch)
 			{
 				return index;
 			}
