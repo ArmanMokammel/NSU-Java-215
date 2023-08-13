@@ -25,9 +25,9 @@ public class MyString {
 	{
 		String s = new String();
 		
-		int spaceFirst = 0, spaceEnd = this.length()-1;
+		int spaceStart = 0, spaceEnd = this.length()-1;
 		
-		while(str[spaceFirst] == ' ' && spaceFirst < this.length())
+		while(str[spaceStart] == ' ' && spaceStart < this.length())
 		{
 			spaceFirst++;
 		}
@@ -37,7 +37,7 @@ public class MyString {
 			spaceEnd--;
 		}
 		
-		for(int j = spaceFirst; j <= spaceEnd; j++)
+		for(int j = spaceStart; j <= spaceEnd; j++)
 		{
 			s = s + str[j];
 		}
