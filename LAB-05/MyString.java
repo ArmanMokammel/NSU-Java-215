@@ -29,7 +29,7 @@ public class MyString {
 		
 		while(str[spaceStart] == ' ' && spaceStart < this.length())
 		{
-			spaceFirst++;
+			spaceStart++;
 		}
 		
 		while(str[spaceEnd] == ' ' && spaceEnd > 0)
