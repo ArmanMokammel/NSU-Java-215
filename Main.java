@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		char[] string = {
-			'H','e','l','l','o',' ','W','o','r','l','d',
+			'H','e','l','l','o',' ','W','o','r','l','d'
 		};
 		MyGhorarDim s = new MyGhorarDim(string);
 		
