@@ -62,7 +62,7 @@ public class MyString {
 			}
 			index++;				
 		}
-		return 0;
+		return -1;
 	}
 	
 	public boolean contains(String s)
