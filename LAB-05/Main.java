@@ -13,8 +13,11 @@ public class Main {
 		System.out.println(s1);
 		System.out.println(s1.length());
 		System.out.println(s1.charAt(4));
+		System.out.println(s1.indexOf('l'));
 		System.out.println(s1.contains("Wor"));
-		System.out.println(s1.equals("Hullo World"));		
+		System.out.println(s1.equals("Hullo World"));
+		System.out.println(s1.toUpperCase());
+		System.out.println(s1.toLowerCase());
 		System.out.println(s1.trim());
 
 	}
