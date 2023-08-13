@@ -24,13 +24,24 @@ public class MyString {
 	public String trim()
 	{
 		String s = new String();
-		for(char c: str)
+		
+		int spaceFirst = 0, spaceEnd = this.length()-1;
+		
+		while(str[spaceFirst] == ' ' && spaceFirst < this.length())
 		{
-			if(c != ' ')
-			{
-				s += c;
-			}
+			spaceFirst++;
 		}
+		
+		while(str[spaceEnd] == ' ' && spaceEnd > 0)
+		{
+			spaceEnd--;
+		}
+		
+		for(int j = spaceFirst; j <= spaceEnd; j++)
+		{
+			s = s + str[j];
+		}
+		
 		return s;
 	}
 	
