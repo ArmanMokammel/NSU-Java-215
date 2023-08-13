@@ -35,9 +35,9 @@ public class MyString {
 			spaceEnd--;
 		}
 		
-		char[] s = new char[spaceEnd-spaceFirst+1];
+		char[] s = new char[spaceEnd-spaceStart+1];
 		int i = 0;
-		for(int j = spaceFirst; j <= spaceEnd; j++)
+		for(int j = spaceStart; j <= spaceEnd; j++)
 		{
 			s[i] = str[j];
 			i++;
