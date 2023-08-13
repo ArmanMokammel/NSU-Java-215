@@ -22,9 +22,7 @@ public class MyString {
 	}
 	
 	public String trim()
-	{
-		String s = new String();
-		
+	{		
 		int spaceStart = 0, spaceEnd = this.length()-1;
 		
 		while(str[spaceStart] == ' ' && spaceStart < this.length())
@@ -37,12 +35,15 @@ public class MyString {
 			spaceEnd--;
 		}
 		
-		for(int j = spaceStart; j <= spaceEnd; j++)
+		char[] s = new char[spaceEnd-spaceFirst+1];
+		int i = 0;
+		for(int j = spaceFirst; j <= spaceEnd; j++)
 		{
-			s = s + str[j];
+			s[i] = str[j];
+			i++;
 		}
 		
-		return s;
+		return new String(s);
 	}
 	
 	public char charAt(int i)
