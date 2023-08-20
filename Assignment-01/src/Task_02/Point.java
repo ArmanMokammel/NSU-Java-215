@@ -34,7 +34,7 @@ public class Point {
 	
 	public double distanceTo(Point other)
 	{
-		return Math.sqrt(Math.pow(other.x - this.x, 2) + Math.pow(other.y - this.y, 2));
+		return Math.sqrt(Math.pow(other.getX() - this.x, 2) + Math.pow(other.getY() - this.y, 2));
 	}
 	
 	public void translate(double dx, double dy)
