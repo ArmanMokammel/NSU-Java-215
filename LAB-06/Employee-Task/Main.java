@@ -13,7 +13,7 @@ public class Main {
 			);
 		
 		PartTimeEmployee ptm = new PartTimeEmployee(
-				"Mahmuda Zannat Punny",
+				"Soraiyah Samantha",
 				24,
 				"Block-F, Bashundhara",
 				"ECE",
