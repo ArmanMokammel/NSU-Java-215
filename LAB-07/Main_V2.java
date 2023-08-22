@@ -1,15 +1,14 @@
 
 public class Main_V2 {
 	
+	/** Here the size of array will be dynamic **/
 	public static Plant[] plants = new Plant[0];
-
 
 	public static void main(String[] args) {
 
-		Plant p = new Herb("Arman", "Black", true, "Summer");
-		Plant p2 = new Flower("ArmanM", "Black", false, true);
-		Plant p3 = new Flower("ArmanMM", "Black", true, true);
-
+		Plant p = new Herb("Dhoniya", "Green", true, "Summer");
+		Plant p2 = new Flower("Rose", "Red", false, true);
+		Plant p3 = new Flower("Dandelion", "Yellow", true, true);
 		
 		add(p);
 		add(p2);
@@ -17,11 +16,11 @@ public class Main_V2 {
 
 		display(plants);
 		
-		remove("ArmanM");
+		remove("Rose");
 		
 		display(plants);
 		
-		System.out.println(search(plants, "Arman"));
+		System.out.println(search(plants, "Dhoniya"));
 	}
 	
 	static void add(Plant p)
@@ -70,9 +69,9 @@ public class Main_V2 {
 	
 	static void display(Plant[] plants)
 	{
-		for(Plant p: plants)
+		for(int i = 0; i < plants.length; i++)
 		{
-			System.out.println(p + "\n");
+			System.out.println(plants[i] + "\n");				
 		}
 	}
 

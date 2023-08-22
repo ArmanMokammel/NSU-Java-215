@@ -6,6 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		/** Here the array is of fixed size (10) **/
 		Plant[] plants = new Plant[SIZE];
 				
 		Plant p = new Herb("Dhoniya", "Green", true, "Summer");
