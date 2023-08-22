@@ -9,7 +9,7 @@ public class Flower extends Plant{
 		this.hasThorn = hasThorn;
 	}
 
-	public boolean HasSmell() {
+	public boolean geyHasSmell() {
 		return hasSmell;
 	}
 
@@ -17,7 +17,7 @@ public class Flower extends Plant{
 		this.hasSmell = hasSmell;
 	}
 
-	public boolean HasThorn() {
+	public boolean getHasThorn() {
 		return hasThorn;
 	}
 
