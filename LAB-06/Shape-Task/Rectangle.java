@@ -10,9 +10,9 @@ public class Rectangle extends Shape{
 	
 	public Rectangle(String name, double side1, double side2)
 	{
-		super(name);
 		this.side1 = side1;
 		this.side2 = side2;
+		super(name);
 	}
 
 	public double getSide1()
