@@ -17,7 +17,7 @@ public class Flower extends Plant{
 		this.hasSmell = hasSmell;
 	}
 
-	public boolean getHasThorn() {
+	public boolean HasThorn() {
 		return hasThorn;
 	}
 
