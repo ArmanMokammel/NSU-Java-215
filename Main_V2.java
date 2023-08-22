@@ -1,5 +1,5 @@
 
-public class Main {
+public class Main_V2 {
 	
 	public static Plant[] plants = new Plant[0];
 
