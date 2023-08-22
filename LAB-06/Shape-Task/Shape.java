@@ -1,6 +1,11 @@
 
 public class Shape {
 	private String name;
+
+	public Shape()
+	{
+		
+	}
 	
 	public Shape(String name)
 	{
