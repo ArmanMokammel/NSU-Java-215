@@ -3,7 +3,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class Hello {
+public class Main {
 
 	public static void main(String[] args) {
 		
