@@ -42,14 +42,17 @@ public class Main {
 	        frame.add(txt2) ;
 	        
 	        JButton b1 = new JButton("Add");
-	        b1.setBounds(110, 100, 80, 40);
+	        b1.setBounds(110, 140, 80, 40);
 	        
 	        frame.add(b1) ;
-	        
-	        
+	        	        
 	        JLabel label = new JLabel("Result: ");
-	        label.setBounds(20, 180, 80, 20);
+	        label.setBounds(20, 100, 80, 20);
 	        frame.add(label);
+
+		JTextField txt3 = new JTextField();
+	        txt3.setBounds(110, 100, 200, 20);
+	        frame.add(txt3);
 	        
 	        frame.setVisible(true);
         
@@ -59,7 +62,7 @@ public class Main {
 	                int val2 = Integer.parseInt(txt2.getText());
 	                int sum = val1 + val2;
 	            	JOptionPane.showMessageDialog (null, "Result: " + sum) ;
-	            	label.setText("Result: " + sum);
+	            	txt3.setText(Integer.toString(sum));
 	            }
 	         });
 	        
