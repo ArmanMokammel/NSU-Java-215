@@ -12,7 +12,9 @@ public class Task_01 {
 				if(x < 0) {
 					throw new Exception("Input positive integer only");
 				}
-				sum += x;
+				else {
+					sum += x;
+				}				
 			}
 			catch(Exception ex)
 			{
